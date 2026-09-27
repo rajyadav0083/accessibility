@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sauce-labs": {
+      "type": "http",
+      "url": "https://mcp.saucelabs.com",
+      "headers": {
+        "Authorization": "Basic <BASE64_OF_USERNAME_COLON_ACCESSKEY>",
+        "X-Sauce-Region": "US_WEST"
+      }
+    }
+  }
+}

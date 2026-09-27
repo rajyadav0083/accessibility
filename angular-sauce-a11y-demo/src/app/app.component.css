@@ -1,0 +1,48 @@
+:host { display: block; }
+
+.site-header {
+  background: #172554;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand-row {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 64px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand { font-weight: 700; font-size: 1.2rem; }
+.menu-button { border: 0; background: transparent; color: #fff; font-size: 14px; padding: 4px; }
+.mobile-menu { max-width: 1100px; margin: 0 auto; padding: 0 24px 16px; display: flex; gap: 20px; }
+.mobile-menu a { color: #fff; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+.eyebrow { font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .8rem; }
+h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: 1.05; margin: 8px 0 20px; }
+h2 { margin-top: 0; }
+.intro { font-size: 1.15rem; max-width: 60ch; }
+.hero-image { width: 100%; border-radius: 18px; }
+
+.primary { min-height: 44px; padding: 10px 18px; border: 0; border-radius: 8px; background: #1d4ed8; color: #fff; font-weight: 700; cursor: pointer; }
+.card-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card-grid > h2 { grid-column: 1 / -1; }
+.card { border: 1px solid #d1d5db; border-radius: 12px; padding: 24px; }
+.name-input { width: 100%; box-sizing: border-box; min-height: 44px; padding: 10px; border: 1px solid #6b7280; border-radius: 6px; }
+.tiny-button { width: 20px; height: 20px; padding: 0; }
+.contact { margin-top: 56px; padding-top: 32px; border-top: 1px solid #d1d5db; }
+
+.dialog-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: grid; place-items: center; padding: 20px; }
+.dialog { background: white; max-width: 500px; width: 100%; padding: 28px; border-radius: 14px; box-shadow: 0 12px 50px rgba(0,0,0,.3); }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; }
+  .card-grid { grid-template-columns: 1fr; }
+}

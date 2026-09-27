@@ -1,0 +1,69 @@
+<header class="site-header">
+  <div class="brand-row">
+    <div class="brand">Hello Angular 20</div>
+    <!-- Intentional a11y issue for the demo: icon-only button has no accessible name. -->
+    <button class="menu-button" type="button" (click)="toggleMenu()">
+      <span aria-hidden="true">☰</span>
+    </button>
+  </div>
+
+  @if (menuOpen) {
+    <nav class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  }
+</header>
+
+<main id="home" class="container">
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">Angular 20 + Sauce Labs + axe-core</p>
+      <h1 id="hero-title">Hello World Accessibility Demo</h1>
+      <p class="intro">
+        This intentionally imperfect page is used to demonstrate automated WCAG testing on Sauce Labs.
+      </p>
+      <button class="primary" type="button" (click)="openDialog()">Open demo dialog</button>
+    </div>
+
+    <!-- Intentional a11y issue: image has no alt text. -->
+    <img class="hero-image" src="https://placehold.co/480x280" />
+  </section>
+
+  <section id="about" class="card-grid" aria-labelledby="about-title">
+    <h2 id="about-title">Accessibility test targets</h2>
+
+    <article class="card">
+      <h3>Semantic HTML</h3>
+      <p>Headings, landmarks and navigation should expose a meaningful structure to assistive technology.</p>
+    </article>
+
+    <article class="card">
+      <h3>Forms</h3>
+      <!-- Intentional a11y issue: input has no associated label. -->
+      <input class="name-input" type="text" placeholder="Your name" />
+    </article>
+
+    <article class="card">
+      <h3>Touch targets</h3>
+      <!-- Intentional mobile a11y issue: very small target. -->
+      <button class="tiny-button" type="button">+</button>
+    </article>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p>Email: accessibility@example.test</p>
+  </section>
+</main>
+
+@if (showDialog) {
+  <div class="dialog-backdrop" role="presentation" (click)="closeDialog()">
+    <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" (click)="$event.stopPropagation()">
+      <h2 id="dialog-title">Hello from Angular</h2>
+      <p>This dialog is intentionally simple so Devin can identify and improve its accessibility.</p>
+      <button class="primary" type="button" (click)="closeDialog()">Close</button>
+    </section>
+  </div>
+}
