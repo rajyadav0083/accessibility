@@ -1,0 +1,11 @@
+2026-09-27T21:22:42.770Z INFO @wdio/cli:launcher: Run onPrepare hook
+2026-09-27T21:22:42.788Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2026-09-27T21:22:42.788Z INFO @wdio/xvfb: XvfbManager.init() called
+2026-09-27T21:22:42.789Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2026-09-27T21:22:42.789Z INFO @wdio/local-runner: Start worker 0-0 with arg: run tests/wdio.conf.js
+2026-09-27T21:22:42.827Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2026-09-27T21:22:42.828Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2026-09-27T21:22:42.828Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+2026-09-27T21:26:33.165Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2026-09-27T21:26:33.166Z INFO @wdio/local-runner: Shutting down spawned worker
+2026-09-27T21:26:33.422Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

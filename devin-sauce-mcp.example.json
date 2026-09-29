@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sauce-labs": {
+      "url": "https://mcp.saucelabs.com",
+      "transport": "http",
+      "headers": {
+        "Authorization": "Basic b2F1dGgtYW51c2hha3lhMDExLWY3M2ZhOjk4OGZkNTBjLTg1NGItNDNlYS1iNjM2LTY5MmQ3Zjk1YWRkNw==",
+        "X-Sauce-Region": "eu-central"
+      }
+    }
+  }
+}

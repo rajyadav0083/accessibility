@@ -1,0 +1,19 @@
+2026-09-27T21:22:43.838Z INFO @wdio/local-runner: Run worker command: run
+2026-09-27T21:22:44.244Z INFO webdriver: Initiate new session using the WebDriver protocol
+2026-09-27T21:22:44.244Z INFO @wdio/utils: Connecting to existing driver at https://ondemand.eu-central-1.saucelabs.com:443/wd/hub
+2026-09-27T21:22:44.253Z INFO webdriver: [POST] https://ondemand.eu-central-1.saucelabs.com/wd/hub/session
+2026-09-27T21:23:32.437Z INFO webdriver: Register BiDi handler for session with id ffc5a10e03b54d58ae8e4c41386a8f01
+2026-09-27T21:23:32.438Z INFO webdriver: Connecting to webSocketUrl wss://ws.eu-west-3-lnbf.saucelabs.com/selenium/session/ffc5a10e03b54d58ae8e4c41386a8f01/se/bidi
+2026-09-27T21:23:33.112Z INFO webdriver: Connected to Bidi protocol at wss://ws.eu-west-3-lnbf.saucelabs.com/selenium/session/ffc5a10e03b54d58ae8e4c41386a8f01/se/bidi
+2026-09-27T21:23:33.112Z INFO webdriver: Connected to WebDriver Bidi interface at wss://ws.eu-west-3-lnbf.saucelabs.com/selenium/session/ffc5a10e03b54d58ae8e4c41386a8f01/se/bidi
+2026-09-27T21:23:33.114Z INFO webdriver: COMMAND getWindowHandle()
+2026-09-27T21:23:33.115Z INFO webdriver: BIDI COMMAND browsingContext.getTree {}
+2026-09-27T21:23:33.116Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.contextCreated"]}
+2026-09-27T21:23:33.117Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["log.entryAdded","browsingContext.navigationCommitted"]}
+2026-09-27T21:23:33.117Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[1319 bytes]>, contexts: undefined }
+2026-09-27T21:23:33.117Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted","browsingContext.fragmentNavigated","network.responseCompleted","network.beforeRequestSent","network.fetchError"]}
+2026-09-27T21:23:33.118Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.userPromptOpened"]}
+2026-09-27T21:23:33.118Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted","browsingContext.contextDestroyed"]}
+2026-09-27T21:23:33.118Z INFO webdriver: [GET] https://ondemand.eu-central-1.saucelabs.com/wd/hub/session/ffc5a10e03b54d58ae8e4c41386a8f01/window
+2026-09-27T21:23:33.679Z INFO webdriver: RESULT D061568E3D5A933F33F12FD31ACF0B45
+2026-09-27T21:26:33.132Z WARN webdriverio:ShadowRootManager: Could not register shadow root preload script, shadow DOM will not be pierced in this session: Command script.addPreloadScript with id 4 timed out after 180000ms! Consider increasing the "bidiResponseTimeout" option.
